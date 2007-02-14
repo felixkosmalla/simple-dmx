@@ -10,8 +10,8 @@ Simple DMX was developed primarily to facilitate the implementation of the Cameo
 
 == Contents ==
 
-* [Simple DMX Development Setup]
-* [Simple DMX Architecture Overview]
-* [Current Status]
-* [Feature List]
+ * Simple DMX Development Setup
+ * Simple DMX Architecture Overview
+ * Current Status
+ * Feature List
 
