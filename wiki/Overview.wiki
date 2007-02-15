@@ -8,7 +8,7 @@ Simple DMX was developed primarily to facilitate the implementation of the Cameo
 
 [http://wiki.cameocontrol.com/ Cameo Lighting Console Wiki]
 
-[http://wiki.dev.cameocontrol.com/ Cameo Lighting Console Development Wiki]
+[http://code.google.com/p/cameo-console/wiki/Overview Cameo Lighting Console Development Wiki]
 
 == Contents ==
 
