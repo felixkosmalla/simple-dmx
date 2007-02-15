@@ -1,7 +1,7 @@
 #Instructions on how to setup the recommended Simple DMX development environment 
 
 == Overview ==
-Becouse Simple DMX spans multiple languages several technologies are required to begin working on Straigt DMX.  The minimal set of applications to utilize all of the development tools is as follows,
+Simple DMX spans multiple languages meaning several technologies are required to begin working on Simple DMX.  The minimum set of applications required to utilize all of the development tools is as follows:
  * [http://java.sun.com/javase/downloads/index.jsp JDK 1.5] - Java Runtime / Compiler
  * gcc / gcb / make - C and C++ Compiler
  * [http://subversion.tigris.org/ subversion] - version control system
@@ -9,57 +9,57 @@ Becouse Simple DMX spans multiple languages several technologies are required to
  * [http://subclipse.tigris.org/ subclipse] - Eclipse Subversion Integration
  * [http://www.eclipse.org/cdt/ CDT] - Eclipse C and C++ Integration
 
-All of these tools are feely available.  Installation on a non-windows platform is relativly painless, there are some extrat steps with windows.
+All of the above tools are free.  Installation on a non-Windows platform is relatively painless, however there are some extra steps when using Windows.
 
 
 == Java 1.5 ==
-Make sure you have a Java 1.5 compatable JDK installed.  You can test which version of java you have by typeing
+Make sure you have a Java 1.5 compatable JDK installed.  You can test which version of java you have by typing
 
 `java -version`
 
-at the command line.  If you do not have java installed or need to update the JDK you can download it here,
+at the command line.  If you do not have java installed or need to update the JDK you can download it here:
 
 [http://java.sun.com/javase/downloads/index.jsp JDK 1.5]
 
 
 == gcc / gcb / make ==
-These C / C++ tools are the most popular free applications for developing in C / C++.  Thier function is as follows
+These C / C++ tools are the most popular free applications for developing in C / C++.  Their functionality is as follows:
 
  * gcc - C / C++ compiler
  * gcb - C / C++ debugger
  * make - C / C++ compilation file
 
-These tools have been chosen for Straigt DMX to ensure the best crossplatform compatibility.
+These C compiler tools have been chosen for Simple DMX to ensure the best cross-platform compatibility.
 
 === Unix Based Setup ===
-These tools come standard with most Unix style operating systems.  If they are not acceable from the command line, a package manager or other tool can be used to install them.
+The C compiler tools listed above come standard with most Unix style operating systems.  If they are not executable from the command line, a package manager or other tool can be used to install them.
 
 === Windows Based Setup ===
-These tools are designed for Unix based environments, so getting them to work in windows is a bit tricky.  There are two options.  You could install [http://www.cygwin.com/ cygwin] with the GCC package, but becouse the installation of cygwin is not too simple, we recomend useing [http://www.mingw.org/ Minimalist GNU for Windows].  The MinGW tools provide an easy installer for the compilation tools needed for developing Straigt DMX.  Download the latest version of *MinGW-X.X.X.exe* from the MinGW [http://www.mingw.org/download.shtml download page].  Run the file and click through the installation process, once you hit a page where you need to select which packages to install, make sure to check the additional packages for *C++ compiler* and *mingw32-make*.
+The C compiler tools are designed for Unix based environments, so getting them to work in Windows is a bit tricky.  There are two options.  You can install [http://www.cygwin.com/ cygwin] with the GCC package. However, the installation of cygwin is not simple, so we recommend using [http://www.mingw.org/ Minimalist GNU for Windows].  The MinGW tools provide an easy installer for the C compiler tools needed to develop Simple DMX.  Download the latest version of *MinGW-X.X.X.exe* from the MinGW [http://www.mingw.org/download.shtml download page].  Run the file and click through the installation process, when you come to a page where you need to select which packages to install be sure to check the boxes for the additional packages: *C++ compiler* and *mingw32-make*.
 
 *ADD IMAGE?*
 
-After you have completed the installer you have to add the MinWG binaries direcotry to your windows PATH variable, so that Eclipse can easily access the applications.  You can find the binaries directory in
+After you have completed the installer you have to add the MinWG binaries directory to your windows PATH variable, in order for Eclipse to easily access the applications.  You can find the binaries directory in
 `<install_path>\MinGW\bin`
-if you can use the *gcc* and *mingw32-make* commands from the command line you have successfully installed gcc in windows.
+if you can use the *gcc* and *mingw32-make* commands from the command line you have successfully installed gcc in Windows.
 
 
 == Subversion ==
-The Straight DMX code is stored with the Subversion revision system.
+The Simple DMX code is stored with the Subversion revision system.
 
 [http://subversion.tigris.org/ Subversion Home Page]
 
-You will need to install a Subversion client and request access to the code repository before you can develop Straigt DMX.  Which Subversion client you need depends on your operating system,
+You will need to install a Subversion client and request access to the code repository before you can develop Straigt DMX.  Which Subversion client you need depends on your operating system:
 
- * *Mac OS X* - we recommend the following pre-build binary package: [http://www.codingmonkeys.de/mbo/articles/2006/11/08/subversion-1-4-2 Martin Ott's packaging]. Grab the package and install it. It contains the command line interface to svn (so that you can use svn directly from the terminal as for a traditional UNIX) but it also contain the required binding libraries to interface with the eclipse component.
- * *WinXP* - [http://tortoisesvn.net/ TortoiseSVN] provides an interface that is integrated with the Explorer. As always, a windows setup is a complex endeavor and you will have to follow directions to tell tortoise to rely on Putty and SSH to setup the tunnels. 
+ * *Mac OS X* - we recommend the following pre-build binary package: [http://www.codingmonkeys.de/mbo/articles/2006/11/08/subversion-1-4-2 Martin Ott's packaging]. Grab the package and install it. It contains the command line interface to svn (so that you can use svn directly from the terminal as for a traditional UNIX) it also containS the required binding libraries to interface with the eclipse component.
+ * *WinXP* - [http://tortoisesvn.net/ TortoiseSVN] provides an interface that is integrated with the Explorer.
  * *Linux* - simply grab a recent SVN client for your distribution (any version above 1.4.0 should do). 
 
 === Requesting Access ===
 Sign up as a developer at http://code.google.com/p/simple-dmx/.
 
 === Testing ===
-Once you have a user name and login setup, you can test your connection to the SVN server with the following command,
+Once you have a user name and login setup, you can test your connection to the SVN server with the following command:
 
 `svn list http://dev.dmx.cameocontrol.com/dmx`
 
@@ -71,42 +71,42 @@ Download and install the Eclipse IDE.
 
 [http://www.eclipse.org/ Eclipse Home Page]
 
-Eclipse version 3.2 is required.  If you have version 3.1 please upgrade.  If you must still use Eclipse 3.1 two versions of Eclipse can be used on the same computer as long as they reside in separate installation directories and the workspaces they use are disjoint.
+Eclipse version 3.2 is required, if you have version 3.1 please upgrade to 3.2.  If you need to use Eclipse 3.1, two versions of Eclipse can be used on the same computer as long as they reside in separate installation directories and the workspaces they use are disjoint.
 
-If you are unfamiliar with Eclipse you may find these video demonstrations helpful.  [http://showmedo.com/videos/series?name=IntroductionToEclipseWithJava_JohnM Introduction To Eclipse]
+If you are unfamiliar with Eclipse you may find the following video demonstrations helpful.  [http://showmedo.com/videos/series?name=IntroductionToEclipseWithJava_JohnM Introduction To Eclipse]
 
 ==== Installing an Eclipse Plugin ====
 Both Subclipse and CDT tools can be installed through Eclipe's built in plugin manager.
 
-To install a new plugin, simply nagivate to Help > Software Updates > Find and Install.  Then pick "Search New Features to Install" and on the next dialog box click on the "New Remote Site..." button. 
+To install a new plugin nagivate to Help > Software Updates > Find and Install.  Then select "Search New Features to Install" and in the next dialog box click on the "New Remote Site..." button. 
 
 You will be presented with a dialog box where you should give a name and the URL of the site where the Eclipse extension can be found. For instance, for CDT, you would enter the information as shown below 
  * Name - CDT
  * URL - http://download.eclipse.org/tools/cdt/releases/callisto
 
-Finally, select that site (check its box) and click finish. Follow the straightforward directions, read and accept the license agreement and restart Eclipse once the entire process is over.
+Finally, select that site (check its box) and click finish. Follow the straightforward directions, read and accept the license agreement and restart Eclipse when complete.
 
 === CDT Plugin ===
-CDT is Eclipse's C/C++ Development Tooling project. It is an industrial strength C/C++ IDE that also serves as a platform for others to provide value added tooling for C/C++ developers. 
+CDT is Eclipse's C/C++ Development Tool project. It is an industrial strength C/C++ IDE that also serves as a platform for others to provide value added tooling for C/C++ developers. 
 
-If you are not familar with CDT the following links maybe helpful,
+If you are not familar with CDT the following links may be helpful:
  * http://wiki.eclipse.org/index.php/CDT:Movies
  * http://dev.eclipse.org/viewcvs/index.cgi/cdt-home/user/Tutorials.html?root=Tools_Project&view=co
  * http://wiki.eclipse.org/index.php/CDT/User/FAQ
  * http://wiki.eclipse.org/index.php/CDT
 
-The CDT can be installed in the Eclipse update manager from the following link, http://download.eclipse.org/tools/cdt/releases/callisto
+The CDT can be installed in the Eclipse update manager from the following link: http://download.eclipse.org/tools/cdt/releases/callisto
 
 === Subclipse Plugin ===
-Although svn has a nice command line interface it is easiest to work with an Subversion Eclipse integration.  Our recomenede Subversion plugin is [http://subclipse.tigris.org/ Subclipse].  Subclipse can be installed easily from an Eclipse Update site provided on their website, namely: http://subclipse.tigris.org/update_1.0.x. 
+Although svn has a command line interface it is easiest to work with Subversion Eclipse integration.  Our recommened Subversion plugin is [http://subclipse.tigris.org/ Subclipse].  Subclipse can be installed easily from the Eclipse Update site provided through their website: http://subclipse.tigris.org/update_1.0.x. 
 
-*Note:* If you are using Eclipse 3.2 and the latest version of Subclipse on OS X you maybe need to change the Eclipse SVN Interface to JavaSVN.  This can be done from Window > Prefrences > Team > SVN.
+*Note:* If you are using Eclipse 3.2 and the latest version of Subclipse with OS X you may need to change the Eclipse SVN Interface to JavaSVN.  This can be done from Window > Prefrences > Team > SVN.
 
 
 == Checking-out the source code ==
-The subversion repository for Straight DMX is hosted on cameocontrol.com.  To check out the source code in the repository, follow these direction . 
+The subversion repository for Simple DMX is hosted on cameocontrol.com.  To check out the source code in the repository, follow these directions. 
 
-Begin by starting the SVN Chechout wizard, Select, File > New > Other.  A window of wizards should pop up.  Navigate in the dialog box down the the SVN folder (which should be visible since you installed Subclipse) and pick *Checkout Projects from SVN*
+Begin by starting the SVN Checkout wizard, Select, File > New > Other.  A window of wizards should pop up.  Navigate in the dialog box down to the SVN folder (which should be visible since you installed Subclipse) and pick *Checkout Projects from SVN*
 
 In the next dialog box, enter an SVN URL for the root of the repository as follows,
 
@@ -115,21 +115,21 @@ In the next dialog box, enter an SVN URL for the root of the repository as follo
 
 If everything goes according to plan, you will be prompted for your password, or even better, subversion will used a cached copy of your password. The outcome should be a dialog box populated with all the _projects_ that exist in the repository.
 
-The next step is *critical*. To check out a project, you must select the correct sub-directory. Each subversion project uses the following structure: The root of the project has 3 subdirectories named trunk, tags and branches. 
+The next step is *critical*. To check out a project you must select the correct sub-directory. Each subversion project uses the following structure: The root of the project has 3 sub-directories named trunk, tags and branches. 
  * trunk - contains the current working revision 
  * tags - contain one subdirectory whose name is a symbolic tag 
  * branches - plays the same role for experimental (i.e., disruptive) changes that should not be on the trunk 
 
-For instance, to checkout the head revision (working revision) of Straight DMX for Windows, you should select the folder win32 > trunk before you click on "next". Once you click on "next", Eclipse will retrieve informations about the Eclipse project that exist underneath that directory on the server. If all is working correctly, it should retrieve the project we created and display the project name (SDMX_Win32 in this case).
+For instance, to checkout the head revision (working revision) of Simple DMX for Windows, you should select the folder win32 > trunk before you click on "next". Once you click on "next", Eclipse will retrieve informations about the Eclipse project that exists underneath that directory on the server. If all is working correctly, it should retrieve the project we created and display the project name (SDMX_Win32 in this case).
 
 At this point, simply clicking on "Finish" will complete the process and initiate the actual Subversion transaction to download the entire content of the project. Depending on your connection speed, this should take a minute or two.
 
-All the projects currently in existence are listed below (their Eclipse name)
+All of the projects currently in existence are listed below (their Eclipse name):
 
 || *Project* || *Description* ||
-|| win32 || Straigt DMX Win32 and Driver Connector ||
+|| win32 || Simple DMX Win32 and Driver Connector ||
 || win32test || tests the DLL generated by win32 ||
 || dmxconnector || takes timeddmx DLL and connects it to the JNI Header file || 
 || jnitest || tests the DLL generated by dmxconnector ||
 || simpledmxjava || the java front end of Simple DMX ||
-||common || file commen to all Straigt DMX distributions ||
+||common || file common to all Simple DMX distributions ||
