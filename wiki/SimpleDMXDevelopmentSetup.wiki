@@ -1,5 +1,7 @@
+#Instructions on how to setup the recommended Simple DMX development environment 
+
 == Overview ==
-Becouse Straight DMX spans multiple languages several technologies are required to begin working on Straigt DMX.  The minimal set of applications to utilize all of the development tools is as follows,
+Becouse Simple DMX spans multiple languages several technologies are required to begin working on Straigt DMX.  The minimal set of applications to utilize all of the development tools is as follows,
  * [http://java.sun.com/javase/downloads/index.jsp JDK 1.5] - Java Runtime / Compiler
  * gcc / gcb / make - C and C++ Compiler
  * [http://subversion.tigris.org/ subversion] - version control system
