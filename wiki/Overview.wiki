@@ -1,4 +1,6 @@
-== Welcome to the Simple DMX Development Documentation Wiki ==
+#Overview of the Simple DMX Development Wiki
+
+== Welcome to the Simple DMX Development Wiki ==
 
 This is the documentation resource for developers of the Simple DMX Library.
 
@@ -14,4 +16,3 @@ Simple DMX was developed primarily to facilitate the implementation of the Cameo
  * Simple DMX Architecture Overview
  * Current Status
  * Feature List
-
