@@ -1,4 +1,4 @@
-#Instructions on how to setup the recommended Simple DMX development environment 
+#Instructions on how to setup the Simple DMX development environment 
 
 == Overview ==
 Simple DMX spans multiple languages meaning several technologies are required to begin working on Simple DMX.  The minimum set of applications required to utilize all of the development tools is as follows:
