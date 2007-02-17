@@ -120,7 +120,7 @@ The next step is *critical*. To check out a project you must select the correct 
  * tags - contain one subdirectory whose name is a symbolic tag 
  * branches - plays the same role for experimental (i.e., disruptive) changes that should not be on the trunk 
 
-For instance, to checkout the head revision (working revision) of Simple DMX for Windows, you should select the folder win32 > trunk before you click on "next". Once you click on "next", Eclipse will retrieve informations about the Eclipse project that exists underneath that directory on the server. If all is working correctly, it should retrieve the project we created and display the project name (SDMX_Win32 in this case).
+For instance, to checkout the head revision (working revision) of Simple DMX for Windows, you should select the folder win32 > trunk before you click on "next". Once you click on "next", Eclipse will retrieve information about the Eclipse project that exists underneath that directory on the server. If all is working correctly, it should retrieve the project we created and display the project name (SDMX_Win32 in this case).
 
 At this point, simply clicking on "Finish" will complete the process and initiate the actual Subversion transaction to download the entire content of the project. Depending on your connection speed, this should take a minute or two.
 
