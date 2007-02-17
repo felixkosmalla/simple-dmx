@@ -61,7 +61,7 @@ Sign up as a developer at http://code.google.com/p/simple-dmx/.
 === Testing ===
 Once you have a user name and login setup, you can test your connection to the SVN server with the following command:
 
-`svn list http://dev.dmx.cameocontrol.com/dmx`
+`svn list https://simple-dmx.googlecode.com/svn/`
 
 If this command returns a list of directories, you have installed subversion successfully.
 
